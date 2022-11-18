@@ -20,7 +20,7 @@ ENV PYTHONPATH="${PYTHONPATH}:${UFG_INSTALL}/python"
 
 # Build + install usd_from_gltf
 RUN git init && \
-    git remote add origin https://github.com/google/usd_from_gltf.git && \
+    git remote add origin https://github.com/Numair-MTailor/usd_from_gltf.git && \
     git fetch --depth 1 origin "${UFG_RELEASE}" && \
     git checkout FETCH_HEAD && \
     python "${UFG_SRC}/tools/ufginstall/ufginstall.py" -v "${UFG_INSTALL}" "${USD_DIR}" && \
